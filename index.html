@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <header id="head">
+            <nav id="navbar">
+                <div class="nav_left">
+                    <p class="page_heading">SORTING VISUALIZER</p>
+                    <div class="algos_btn">
+                        <button class="algo_btn">BubbleSort</button>
+                        <button class="algo_btn">MergeSort</button>
+                        <button class="algo_btn">QuickSort</button>
+                        <button class="algo_btn">SelectionSort</button>
+                        <button class="algo_btn">InsertionSort</button>
+                        <button class="algo_btn">HeapSort</button>
+                     
+                    </div>
+                </div>
+                <div class="array-inputs">
+                    <p>Array Size   </p>
+                   <!-- array size slider -->
+                    <input id='arr_size' type = "range" min= 10 max=175 step = 5 value=100>
+                    <p>Algo Speed  </p>
+                    <!-- algorithm speed value selector slider  -->
+                    <input id="arr_speed" type="range"  min=1 max=6 step=1 value=3>
+                    <button id ="arr_generate">Generate New Array</button>
+                </div>
+            </nav>
+    </header>
+
+    <section id="sec">
+            
+            <div id="array_container">
+
+            </div>
+    </section>
+            
+    
+
+    <footer>
+       Sushil Kumar
+    </footer>
+    <script src="./scripts/main.js"></script>
+    <script src="./scripts/visualization.js"></script>
+    <script src="./scripts/Bubblesort.js"></script>
+    <script src="./scripts/Heapsort.js"></script>
+    <script src="./scripts/Mergesort.js"></script>
+    <script src="./scripts/Quicksort.js"></script>
+    <script src="./scripts/Selectionsort.js"></script>
+    <script src="./scripts/Insertionsort.js"></script>
+</body>
+</html>
